@@ -1,0 +1,165 @@
+
+
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Greek Figures</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <script src="../static/js/hints.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/dpph.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <!--
+                <a href="/archive">
+                    Archive
+                </a>
+                -->
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/greek-figures.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Greek Figures
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">VANGELIS</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+greenturtle3141
+
+    </h4>
+
+    
+    <p>This puzzle is an instruction-less logic puzzle. The grid in the first row represents a sample puzzle.</p>
+<div class="capped-img-wrap"><img src="../static/puzzle_resources/greek-figures/soln1-tkqv43.png"></div>
+
+<p>The second row shows two &ldquo;bad solutions&rdquo; as well as the correct solution to the sample puzzle in order to teach its rules.</p>
+<div class="capped-img-wrap"><img src="../static/puzzle_resources/greek-figures/soln2-qqnxfr.png"></div>
+
+<p>The first incorrect solution indicates that the Greek letters alpha and beta indicate how many shaded squares lie in the corresponding row/column. This hypothesis can be verified using the given correct solution. In particular, we can infer that an alpha indicates one shaded square, whereas a beta indicates two shaded squares.</p>
+<p>The second incorrect solution simply demonstrates that two shaded squares cannot be next to each other. Although it is not clear whether or not they can be diagonally adjacent, this ambiguity can be clarified by solving the larger 5&times;5 puzzle.</p>
+<p>To summarize, the rules of the logic puzzle are as follows:</p>
+<ol>
+<li>Shade some squares of the grid.</li>
+<li>If a row/column is labelled with an alpha, there should be exactly one shaded square in that row/column. Similarly, beta indicates two shaded squares.</li>
+<li>No two shaded squares may be adjacent.</li>
+</ol>
+<p>Now let us solve the 5&times;5 puzzle at the bottom.</p>
+<div class="capped-img-wrap"><img src="../static/puzzle_resources/greek-figures/soln-main1-0wt94t.png"></div>
+
+<p>There is a new Greek letter that labels the bottom row: gamma. Since alpha, beta, and gamma are the first three letters of the Greek alphabet, we can infer that gamma means three shaded squares in that row. There is only one way to place those squares so that no two are adjacent:</p>
+<div class="capped-img-wrap"><img src="../static/puzzle_resources/greek-figures/soln-main2-x75wmb.png"></div>
+
+<p>The &times;'s indicate squares that we know cannot be shaded at this point.</p>
+<p>Now notice that the second row from the top has no label. From the sample, one could infer that this means there are no shaded squares. If one desires further confirmation, note that the total number of shaded squares can be counted in two ways: by totalling the number of shaded squares in each row, or by totalling the number of shaded squares in each column. These numbers must be the same. The column labels imply that there are 2+2+1+2+1=8 shaded squares, and the row labels imply that there are 2+2+1+3=8 shaded squares among the labeled rows, which confirms that the unlabeled row has no shaded squares.</p>
+<div class="capped-img-wrap"><img src="../static/puzzle_resources/greek-figures/soln-main3-rck6us.png"></div>
+
+<p>Now look at the second column from the left. If the square marked with a &ldquo;V&rdquo; is not shaded, then the other two squares (marked with &ldquo;E&rdquo;'s) must both be shaded. But this is impossible since they're adjacent, so the &ldquo;V&rdquo; square must be shaded. Similar reasoning may be applied to the fourth column.</p>
+<div class="capped-img-wrap"><img src="../static/puzzle_resources/greek-figures/soln-main4-p0p2fc.png"></div>
+
+<p>It's a straight line to the finish from here: The remaining square (with an &ldquo;N&rdquo;) in the first column must be shaded, which directly implies that &ldquo;G&rdquo; of &ldquo;NEIGH&rdquo; and the &ldquo;E&rdquo; of &ldquo;GENUS&rdquo; are both shaded.</p>
+<div class="capped-img-wrap"><img src="../static/puzzle_resources/greek-figures/soln-main5-543bne.png"></div>
+
+<p>The 5&times;5 puzzle is now solved. To extract, read the shaded squares' letters in book order to get <strong>VANGELIS</strong>, a Greek musician (and thus a Greek Figure).</p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,176 @@
+
+
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Demons and Deductions</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <script src="../static/js/hints.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/dpph.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <!--
+                <a href="/archive">
+                    Archive
+                </a>
+                -->
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/demons-and-deductions.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Demons and Deductions
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">WRATH OF GOD</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+wolf
+
+    </h4>
+
+    
+    <p>This is a relatively common puzzle type known by many different names, such as the <a href="https://en.wikipedia.org/wiki/Zebra_Puzzle">Zebra Puzzle or Einstein's Riddle</a>. There are many ways to tackle this type of puzzle, one of which is provided below.</p>
+<p>A solved grid should look like this:</p>
+<style>
+    .grid {
+        margin: 0 auto 2em;
+        text-align: center;
+    }
+    .grid td, .grid tr:last-child td {
+        border: 1px solid black;
+        text-align: center;
+        height: 1.5em;
+        width: 1.5em;
+        min-height: 1.5em;
+        min-width: 3em;
+        max-height: 1.5em;
+        max-width: 15em;
+        padding: 0;
+    }
+</style>
+
+<table class="grid"><tr><td class="grey">Order</td><td class="grey" style="width:100px">Class</td><td class="grey" style="width:200px">Name</td><td class="grey">Level</td><td class="grey" style="width:200px">Item</td><td class="grey">Level</td></tr><tr><td>1</td><td>Captain</td><td>Longfellow</td><td>10</td><td>Crossbow</td><td>7</td></tr><tr><td>2</td><td>Priest</td><td>Xuthosaris</td><td>8</td><td>Crucifix</td><td>6</td></tr><tr><td>3</td><td>Doctor</td><td>Shinawatra</td><td>5</td><td>Dagger</td><td>4</td></tr><tr><td>4</td><td>Guide</td><td>Sutherland</td><td>3</td><td>Holy Bible</td><td>2</td></tr><tr><td>5</td><td>Scout</td><td>Volnovakha</td><td>9</td><td>Dagger</td><td>1</td></tr></table>
+
+<p>The 13 clues form a hidden acrostic that instructs the solver: LEVELS AS INDEX. Indexing the levels into the names and items gives the answer and the team's secret weapon, <strong>WRATH OF GOD</strong>.</p>
+<p><hr><h4>Detailed Breakdown</h4>
+It would be useful to write out a grid in a spreadsheet, or use a website like <a href="https://www.jsingler.de/apps/logikloeser/">this one</a> to check off your activity as you make logical deductions. It’s not necessary to have a grid like this, but it’s useful to keep all your deductions in check.
+Below is a version of how you mihgt solve this puzzle; it is not the only way to reach the end conclusion, but hopefully this solution will be helpful for solvers to know how to tackle future puzzles of this type and what to look out for. There are other paths to get to the solution; this is just one of them.</p>
+<ol><li>To begin, start by collecting information on what exists in this party — based on the names, classes, and items scattered around various clues, we know the five people are Xuthosaris, Longfellow, Sutherland, Volnovakha, and Shinawatra; the five classes are captain, scout, priest, guide, and doctor; and the five items are the Holy Bible, a crossbow, a crucifix, and two daggers. The levels of the characters and the items will be the numbers from 1–10, with no repeats.
+</li><li>Next, it's useful to note down what is given: Sutherland carries the Holy Bible, which is Level 2. Xuthosaris is the priest. The crossbow is the highest leveled item. The captain goes first.
+</li><li>Based on clue 11, we know the two daggers' levels have a sum of 5; so this gives us only two options, them being levels 2 and 3, or levels 1 and 4. Since the Holy Bible is level 2 and levels are unique, we know the two daggers are levels 1 and 4.
+</li><li>We don’t know what levels all the items or people are yet, but we know that there exist characters of level 8 and 10 (from clue 2 and 13), and items of level 2 (Holy Bible) and 4 (dagger). We also know that there should be three items with even levels, because clue 2 mentions that the three people in the middle all have even-leveled items. Therefore the remaining even level number, 6, belongs to an item.
+</li><li>Clue 3 tells us that Volnovakha has the item with the lowest level, so since we have a Level 1 dagger, it belongs to Volnovakha.
+</li><li>From clue 5, we know that Longfellow is the highest leveled player; since there exists a Level 10 player, it can only be Longfellow. We also know that the crossbow is the highest leveled item, so it belongs to Longfellow.
+</li><li>We know that the very front and back people hold items with odd levels (clue 2); we also know that they are the two people with the highest levels (clue 7), and one of them has the crossbow. Longfellow, being the highest leveled person and holding the crossbow, is one of the people in the front or back. Volnovakha, with the level 1 dagger, is the other one (clue 2, odd-leveled item).
+</li><li>In clue 13, we see Xuthosaris travelling right behind the Level 10 person, which we now know is Longfellow. Since Longfellow can only be the first or last person, for Xuthosaris to travel right behind him, Longfellow must be the first person; this also makes him the captain (clue 1). That means Xuthosaris the priest is travelling second.
+</li><li>In clue 10 we learn that the difference between the scout’s level and their item's level is 8; this means the pair of levels must be (9,1) or (10,2). Since we know the captain (Longfellow) is Level 10, that means the pair of levels (9,1) belongs to the scout, meaning they have the level 1 item. The character that we know has the level 1 item is Volnovakha, with the level 1 dagger, so they are the scout and level 9, and they go last (clue 7).
+</li><li>Every person except the guide is above level 4 (clue 12). Since Level 1, 2, 4 have already been assigned to items from previous deductions, the guide must be level 3. According to clue 4, this means the guide can only carry a level 1 or 2 item. We know that the level 1 item is being carried by the scout (Volnovakha’s dagger), so the guide is carrying the level 2 item — which happens to be the Holy Bible carried by Sutherland (clue 6), so we know the guide is Sutherland.
+</li><li>Since now we know the captain is Longfellow, the scout is Volnovakha, the guide is Sutherland, and the priest is Xuthosaris, this only leaves Shinawatra with being the doctor. Using this with clue 8, we also know that Shinawatra is carrying a dagger — the level 4 one, not held by Volnovakha.
+</li><li>We know from clue 2 that the doctor, scout, Longfellow (captain), and person carrying the Holy Bible (Sutherland the guide) are different people, so the remaining person, the level 8 one, is the only one unaccounted for — the priest.
+</li><li>We know that the captain (Longfellow) is first, the priest (Xuthosaris) is second, and the scout (Volnovakha) is last. According to clue 9, since Volnovakha holds a dagger and goes fifth, Shinawatra, who holds the other dagger, can’t go fourth; so Shinawatra is third, and Sutherland can only be fourth. We know from clue 9 that Sutherland and Shinawatra are next to each other, which confirms this deduction.
+</li><li>The last remaining item is the crucifix, which we know is in front of the Holy Bible and has a higher level; the only person left without an item is the priest (Xuthosaris).
+</li><li>There should only be two numbers left unassigned: Level 5 and Level 7, one of them belonging to the crossbow. We know that the crossbow has an odd level (clue 2) and is the highest leveled item (clue 3). Since we know that there exists a level 6 item, the crossbow is level 7; thus the remaining person (Shinawatra) is level 5. This also means the level 6 item is the remaining crucifix, which fits the description in clue 6.
+</li><li>All the levels, items, classes, and names should be accounted for at this point; double check all the clues again for inconsistencies.</li></ol>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+</html>

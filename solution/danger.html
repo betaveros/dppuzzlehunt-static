@@ -1,0 +1,150 @@
+
+
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Danger!</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <script src="../static/js/hints.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/dpph.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <!--
+                <a href="/archive">
+                    Archive
+                </a>
+                -->
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/danger.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Danger!
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">ASKING FOR TROUBLE</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+mbingo
+
+    </h4>
+
+    
+    <p>Our first step is to determine which cells are protected by guards. We can do so by following the instructions directly.</p>
+<p>The map is given as an image, so we'll want to draw over it.  We can download it and draw on it with Paint (or a similar program), or we can use a browser extension like <a href="https://chrome.google.com/webstore/detail/web-paint/emeokgokialpjadjaoeiplmnkjoaegng">Web Paint</a> to do so directly on the page.</p>
+<p>We know that Dippy never wants to enter a cell with a guard, so we can shade them in immediately.</p>
+<div class="capped-img-wrap"><img src="../static/puzzle_resources/danger/solution-1-hvrq52.png"></div>
+
+<p>Next, we can shade in the cells that arrow guards can see.</p>
+<div class="capped-img-wrap"><img src="../static/puzzle_resources/danger/solution-2-e4n7jx.png"></div>
+
+<p>Finally, we do the same with square guards.</p>
+<div class="capped-img-wrap"><img src="../static/puzzle_resources/danger/solution-3-p0llcn.png"></div>
+
+<p>At this point, a clear path emerges!</p>
+<p>After determining the path, the first thing to try is to look at the letters along this path, which yields IASGKINNORGEFOTRHETSRELOUETTEBLRES. That doesn't seem quite right, but it looks somewhat promising (you can almost make out &ldquo;THE&rdquo; near the middle and &ldquo;LETTERS&rdquo; near the end).</p>
+<p>Another thing to try is to read off the letters protected by guards. This yields TO GET YOUR ANSWER TAKE THE LETTERS FROM THE CELLS IN WHICH DIPPY MADE A TURN. This tracks with the sign-off in the instructions: &ldquo;And remember—there's danger at every turn!&rdquo;</p>
+<p>Taking the letters at the turns along the path yields <strong>ASKING FOR TROUBLE</strong>, which is indeed what Dippy is doing by embarking on such a dangerous mission!</p>
+<p>(And, for completeness, the cells along the path that aren't at the location of a turn spell IGNORE THESE LETTERS, which many solvers have done without even knowing it!)</p>
+
+    
+
+    
+
+    
+
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+</html>

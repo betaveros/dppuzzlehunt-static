@@ -1,0 +1,146 @@
+
+
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+<title>Demons and Deductions</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <script src="../static/js/hints.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/dpph.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <!--
+                <a href="/archive">
+                    Archive
+                </a>
+                -->
+            </div>
+            <div class="top-left-actions">
+                
+
+
+
+<a href="../post-hunt-solve/demons-and-deductions.html" class="btn">Check your answer spoiler-free</a>
+
+
+<a href="../solution/demons-and-deductions.html" class="btn">View solution</a>
+<a href="../stats/demons-and-deductions.html" class="btn">Stats</a>
+
+
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<h1>
+    
+    Demons and Deductions
+    
+    
+</h1>
+
+<main>
+    
+    <p>Join Dippy in playing the latest RPG, Demons &#38; Deductions! The party often falls under dire circumstances but always seem to prevail; what is the party's secret weapon?</p>
+<ol><li>Let’s play D&#38;D! There are five members in this party, each carrying an item for hunting demons; they are travelling down a narrow path, so they have situated themselves in a single file line. The levels go from 1 to 10; each person is a different level, and each item is a different level as well. No number is repeated between the levels of the characters and items. The captain leads the way and goes first.</li><li>Even leveled items are carried by the three members in the middle of the pack; odd leveled items are carried by the first and last members. In some order, the five party members are the scout, the doctor, the level 8 person, the person carrying the Holy Bible, and Longfellow.</li><li>Volnovakha has the item with the lowest level. The crossbow is the item with the highest level.</li><li>Each character can only hold an item that is below their current level.</li><li>Longfellow is both the highest leveled player in the party, and also holds the highest leveled item.</li><li>Sutherland is carrying the Holy Bible, which is level 2; the crucifix, carried somewhere in front of Sutherland, has a higher level.</li><li>As they don’t want to be ambushed, the party put the highest leveled and second highest leveled party members as the first and last, in some order. One of them is holding a crossbow.</li><li>Shinawatra is either a guide or carrying a dagger, but not both.</li><li>In some order, the two people with the same first letters in their name are next to each other. In contrast, the people carrying daggers are not next to each other.</li><li>No one has a difference between their character level and their item level that's more than 4, except for the scout, whose difference is 8.</li><li>Daggers are the only item that there exist two of in the party; everything else there is only one of. The sum of the daggers' levels is 5.</li><li>Every person except the guide is above level 4. There are three items below level 5.</li><li>Xuthosaris is the priest, and is travelling right behind the level 10 person.</li></ol>
+
+<style>
+    .grid {
+        margin: 0 auto 2em;
+        text-align: center;
+    }
+    .grid td, .grid tr:last-child td {
+        border: 1px solid black;
+        text-align: center;
+        height: 1.5em;
+        width: 1.5em;
+        min-height: 1.5em;
+        min-width: 3em;
+        max-height: 1.5em;
+        max-width: 15em;
+        padding: 0;
+    }
+    .grey {
+        background-color:#BBB;
+    }
+    input{
+        margin:0;
+        padding:0;
+        border:0;
+    }
+</style>
+
+<table class="grid"><tr><td class="grey">Order</td><td class="grey" style="width:100px">Class</td><td class="grey" style="width:200px">Name</td><td class="grey">Level</td><td class="grey" style="width:200px">Item</td><td class="grey">Level</td></tr><tr><td>1</td><td><input type="text"></input></td><td><input type="text"></input></td><td><input type="text"></input></td><td><input type="text"></input></td><td><input type="text"></input></td></tr><tr><td>2</td><td><input type="text"></input></td><td><input type="text"></input></td><td><input type="text"></input></td><td><input type="text"></input></td><td><input type="text"></input></td></tr><tr><td>3</td><td><input type="text"></input></td><td><input type="text"></input></td><td><input type="text"></input></td><td><input type="text"></input></td><td><input type="text"></input></td></tr><tr><td>4</td><td><input type="text"></input></td><td><input type="text"></input></td><td><input type="text"></input></td><td><input type="text"></input></td><td><input type="text"></input></td></tr><tr><td>5</td><td><input type="text"></input></td><td><input type="text"></input></td><td><input type="text"></input></td><td><input type="text"></input></td><td><input type="text"></input></td></tr></table>
+
+<hr>
+
+<p class="flavor">You can enter words into the table. However, it will <strong>not</strong> automatically check your work. The text you have entered will not be saved by the server, so it will probably not be there when you reopen the puzzle.</p>
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+</html>

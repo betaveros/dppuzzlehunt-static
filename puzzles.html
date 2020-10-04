@@ -1,0 +1,1220 @@
+
+
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>DP Puzzle Hunt</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/skeleton.css">
+    <link rel="stylesheet" href="static/css/base.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="static/js/sorttable.js"></script>
+    <script src="static/js/tray.js"></script>
+    <script src="static/js/hints.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="static/images/dpph.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="index.html">
+                    Home
+                </a>
+                <a href="rules.html">
+                    Rules
+                </a>
+                
+                
+                <a class="selected-tab" href="puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="teams.html">
+                    Teams
+                </a>
+                <a href="faq.html">
+                    FAQ
+                </a>
+                
+                <a href="errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <!--
+                <a href="/archive">
+                    Archive
+                </a>
+                -->
+            </div>
+            <div class="top-left-actions">
+                
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+<style>
+.dippy { text-align: right; font-style: italic; }
+.tutorial { border: 1px solid black; padding: 1em; }
+.victory { text-align: center; font-weight: bold; }
+</style>
+
+<h1>Puzzles</h1>
+
+
+
+
+
+
+<h4>Round 1: Finding Friends</h4>
+
+<p>It's my rebirthday, but all my friends are nowhere to be found! I know I'm a dragon-phoenix and I've lived all my life around fire, but I just don't quite feel fired-up enough to celebrate my birthday on my own... friends add a certain <strong>spark</strong> to the celebrations, don't you think?</p>
+
+<p>The only problem is, I have no idea where to find all my friends! Perhaps you could help me look around Dilemma Planet to find them?</p>
+
+<p class="dippy">—Dippy</p>
+
+
+
+
+
+<table class="gph-list-table">
+<tr>
+    <th>Puzzle</th>
+    <th>Solved?</th>
+    <th>✨ Value</th>
+    <th>Solves / Guesses</th>
+    <th>
+        
+    </th>
+    <th>
+    </th>
+</tr>
+
+<tr>
+    <td><a href="puzzle/now-i-know.html">Now I Know...</a></td>
+    <td>
+        
+    </td>
+    <td>
+        2
+    </td>
+    <td>
+        
+        
+        <a href="stats/now-i-know.html">
+        
+        377 / 414
+        
+        (378 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/now-i-know.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>4.10 <small>/ 6</small></b> fun
+        |
+        
+        <b>2.17 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/bottom-lines.html">Bottom Lines</a></td>
+    <td>
+        
+    </td>
+    <td>
+        2
+    </td>
+    <td>
+        
+        
+        <a href="stats/bottom-lines.html">
+        
+        404 / 444
+        
+        (406 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/bottom-lines.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>3.61 <small>/ 6</small></b> fun
+        |
+        
+        <b>2.00 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/top-down-processing.html">Top-Down Processing</a></td>
+    <td>
+        
+    </td>
+    <td>
+        2
+    </td>
+    <td>
+        
+        
+        <a href="stats/top-down-processing.html">
+        
+        401 / 419
+        
+        (401 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/top-down-processing.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>3.68 <small>/ 6</small></b> fun
+        |
+        
+        <b>1.65 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/petal-path.html">Petal Path</a></td>
+    <td>
+        
+    </td>
+    <td>
+        2
+    </td>
+    <td>
+        
+        
+        <a href="stats/petal-path.html">
+        
+        399 / 449
+        
+        (400 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/petal-path.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>4.24 <small>/ 6</small></b> fun
+        |
+        
+        <b>1.88 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/cipher-salad.html">Cipher Salad</a></td>
+    <td>
+        
+    </td>
+    <td>
+        2
+    </td>
+    <td>
+        
+        
+        <a href="stats/cipher-salad.html">
+        
+        403 / 440
+        
+        (403 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/cipher-salad.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>3.83 <small>/ 6</small></b> fun
+        |
+        
+        <b>1.72 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/streamlined.html">Streamlined</a></td>
+    <td>
+        
+    </td>
+    <td>
+        2
+    </td>
+    <td>
+        
+        
+        <a href="stats/streamlined.html">
+        
+        351 / 414
+        
+        (352 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/streamlined.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>3.62 <small>/ 6</small></b> fun
+        |
+        
+        <b>2.89 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/finding-friends.html">META: Finding Friends</a></td>
+    <td>
+        
+    </td>
+    <td>
+        10
+    </td>
+    <td>
+        
+        
+        <a href="stats/finding-friends.html">
+        
+        388 / 428
+        
+        (388 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/finding-friends.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>4.10 <small>/ 6</small></b> fun
+        |
+        
+        <b>2.08 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+
+
+<tr>
+    <td class="preview-next" colspan="6">Solve the metapuzzle to proceed!</td>
+</tr>
+
+</table>
+
+
+
+
+<h4>Round 2: Finding Myself</h4>
+
+<p>That was a fun party! Thanks for helping to get all my friends together so we could celebrate the occasion. But there's another thing I need help with—our rebirth is the time of year we get to change things about ourselves, but I'm not sure what I would like to become. Would you come with me around Dilemma Planet, and maybe help me to find a <strong>spark</strong> of inspiration to fuel my rebirth pyre?</p>
+
+<p class="dippy">—Dippy</p>
+
+
+<table class="gph-list-table">
+<tr>
+    <th>Puzzle</th>
+    <th>Solved?</th>
+    <th>✨ Value</th>
+    <th>Solves / Guesses</th>
+    <th>
+        
+    </th>
+    <th>
+    </th>
+</tr>
+
+<tr>
+    <td><a href="puzzle/sleep-talk.html">Sleep Talk</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/sleep-talk.html">
+        
+        360 / 414
+        
+        (362 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/sleep-talk.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>3.45 <small>/ 6</small></b> fun
+        |
+        
+        <b>2.00 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/greek-figures.html">Greek Figures</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/greek-figures.html">
+        
+        369 / 408
+        
+        (370 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/greek-figures.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>4.07 <small>/ 6</small></b> fun
+        |
+        
+        <b>2.05 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/danger.html">Danger!</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/danger.html">
+        
+        372 / 452
+        
+        (372 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/danger.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>4.05 <small>/ 6</small></b> fun
+        |
+        
+        <b>1.95 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/oodles-of-doodles.html">Oodles of Doodles</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/oodles-of-doodles.html">
+        
+        346 / 478
+        
+        (351 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/oodles-of-doodles.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>4.07 <small>/ 6</small></b> fun
+        |
+        
+        <b>2.52 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/geocaching.html">Geocaching</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/geocaching.html">
+        
+        278 / 541
+        
+        (293 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/geocaching.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>3.94 <small>/ 6</small></b> fun
+        |
+        
+        <b>3.59 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/smash-biros.html">Smash Biros</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/smash-biros.html">
+        
+        341 / 399
+        
+        (342 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/smash-biros.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>4.58 <small>/ 6</small></b> fun
+        |
+        
+        <b>2.80 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/demons-and-deductions.html">Demons and Deductions</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/demons-and-deductions.html">
+        
+        321 / 424
+        
+        (328 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/demons-and-deductions.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>4.49 <small>/ 6</small></b> fun
+        |
+        
+        <b>3.19 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/a-fork-in-the-road.html">A Fork in the Road</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/a-fork-in-the-road.html">
+        
+        312 / 363
+        
+        (314 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/a-fork-in-the-road.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>4.47 <small>/ 6</small></b> fun
+        |
+        
+        <b>3.06 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/fill-in-for-me.html">Fill In For ME</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/fill-in-for-me.html">
+        
+        303 / 488
+        
+        (305 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/fill-in-for-me.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>4.28 <small>/ 6</small></b> fun
+        |
+        
+        <b>3.06 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/multilingual.html">Multilingual</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/multilingual.html">
+        
+        287 / 774
+        
+        (300 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/multilingual.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>4.02 <small>/ 6</small></b> fun
+        |
+        
+        <b>3.02 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/nought-but-a-crossover.html">Nought But a Crossover</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/nought-but-a-crossover.html">
+        
+        326 / 547
+        
+        (329 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/nought-but-a-crossover.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>4.21 <small>/ 6</small></b> fun
+        |
+        
+        <b>1.96 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/the-magic-match.html">The Magic Match</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/the-magic-match.html">
+        
+        179 / 379
+        
+        (200 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/the-magic-match.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>3.72 <small>/ 6</small></b> fun
+        |
+        
+        <b>3.71 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/six-of-one-half-a-dozen-of-the-other.html">Six of One, Half a Dozen of the Other</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/six-of-one-half-a-dozen-of-the-other.html">
+        
+        286 / 814
+        
+        (293 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/six-of-one-half-a-dozen-of-the-other.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>4.13 <small>/ 6</small></b> fun
+        |
+        
+        <b>3.10 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/deity-duos.html">Deity Duos</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/deity-duos.html">
+        
+        190 / 428
+        
+        (198 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/deity-duos.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>3.73 <small>/ 6</small></b> fun
+        |
+        
+        <b>3.73 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/downright-cryptic.html">Downright Cryptic</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/downright-cryptic.html">
+        
+        305 / 391
+        
+        (307 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/downright-cryptic.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>4.27 <small>/ 6</small></b> fun
+        |
+        
+        <b>2.63 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/21st-century-celluloid-man.html">21st Century Celluloid Man</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/21st-century-celluloid-man.html">
+        
+        296 / 498
+        
+        (302 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/21st-century-celluloid-man.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>3.46 <small>/ 6</small></b> fun
+        |
+        
+        <b>2.04 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/play-on-words.html">Play On Words</a></td>
+    <td>
+        
+    </td>
+    <td>
+        4
+    </td>
+    <td>
+        
+        
+        <a href="stats/play-on-words.html">
+        
+        302 / 508
+        
+        (303 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/play-on-words.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>3.81 <small>/ 6</small></b> fun
+        |
+        
+        <b>2.40 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+<tr>
+    <td><a href="puzzle/finding-myself.html">META: Finding Myself</a></td>
+    <td>
+        
+    </td>
+    <td>
+        10
+    </td>
+    <td>
+        
+        
+        <a href="stats/finding-myself.html">
+        
+        283 / 460
+        
+        (283 teams)
+        </a>
+        
+        
+    </td>
+    <td>
+        
+        <a href="solution/finding-myself.html">
+            <b>Solution</b>
+        </a>
+        
+    </td>
+    <td>
+        
+        
+        
+        <b>4.87 <small>/ 6</small></b> fun
+        |
+        
+        <b>3.13 <small>/ 6</small></b> hard
+        
+        
+        
+        
+    </td>
+</tr>
+
+
+
+<tr>
+    <td class="preview-next" colspan="6">Solve the metapuzzle to proceed!</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,285 @@
+
+
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+<title>Solution: Deity Duos</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <script src="../static/js/hints.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/dpph.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <!--
+                <a href="/archive">
+                    Archive
+                </a>
+                -->
+            </div>
+            <div class="top-left-actions">
+                
+<a href="../puzzle/deity-duos.html" class="btn">Back to the puzzle</a>
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<style>
+h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.answers-used {
+    column-width: 350px;
+    white-space: pre;
+    font-family: monospace, monospace;
+}
+</style>
+
+<h1>
+    
+    Solution: Deity Duos
+    <div class="solved-title-marker">Answer: <span class="solved-title-answer">FATES</span></div>
+    
+</h1>
+
+<main>
+    <h4>
+        Written by
+        
+Skynet000
+
+    </h4>
+
+    
+    <p>The flavortext references the game <a href="https://www.supergiantgames.com/games/hades/">Hades</a>, which has a mechanic called <a href="https://hades.gamepedia.com/Duo_Boons">duo boons</a>. For a duo boon, two of the Olympian gods in the game collaborate to produce some power-up for Zagreus. There are 28 such boons, one for each possible pair of the 8 gods.</p>
+<p>Each duo boon has a unique bigram consisting of the first letter of each word (ignoring the 3 “Curse of …”, which have unique bigrams if you remove “of” anyway). This allows solvers to determine which bigrams correspond to which boons.</p>
+<p>Then, the goal of this puzzle is to arrange the given boons so that adjacent boons share a god. A more visualizable way of describing this: imagine that each god represents a different color, and you are given discs that were colored half one color and half another. Your goal would be to arrange the discs in a circle so that all touching edges were the same color.</p>
+<p>After finding the unique arrangement with the given discs in their fixed positions, index into the full duo boon’s name with the number at that position to extract a letter. Reading clockwise from the indicated starting circle yields the cluephrase THE MOIRAI (ENGLISH), which fits the given enumeration at the bottom. The answer to this cluephrase, and thus the puzzle, is the 5 letter word for <a href="https://en.wikipedia.org/wiki/Moirai">Moirai</a> in English, or FATES.</p>
+
+    
+
+    
+
+    
+
+    
+    <hr>
+    <p>The final chain should look like this:
+<a href="../static/puzzle_resources/deity-duos/deity-duos-solved-TFj595Hr.svg"><img src="../static/puzzle_resources/deity-duos/deity-duos-solved-TFj595Hr.svg"></a></p>
+<table>
+<thead>
+<tr>
+<th>Bigram</th>
+<th>Boon Name</th>
+<th>God #1</th>
+<th>God #2</th>
+<th>Index</th>
+<th>Letter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SN</td>
+<td>SWEET NECTAR</td>
+<td>APHRODITE</td>
+<td>POSEIDON</td>
+<td>5</td>
+<td>T</td>
+</tr>
+<tr>
+<td>BS</td>
+<td>BLIZZARD SHOT</td>
+<td>DEMETER</td>
+<td>POSEIDON</td>
+<td>10</td>
+<td>H</td>
+</tr>
+<tr>
+<td>CE</td>
+<td>COLD EMBRACE</td>
+<td>APHRODITE</td>
+<td>DEMETER</td>
+<td>5</td>
+<td>E</td>
+</tr>
+<tr>
+<td>SA</td>
+<td>SMOLDERING AIR</td>
+<td>APHRODITE</td>
+<td>ZEUS</td>
+<td>2</td>
+<td>M</td>
+</tr>
+<tr>
+<td>LR</td>
+<td>LIGHTNING ROD</td>
+<td>ARTEMIS</td>
+<td>ZEUS</td>
+<td>11</td>
+<td>O</td>
+</tr>
+<tr>
+<td>HB</td>
+<td>HUNTING BLADES</td>
+<td>ARES</td>
+<td>ARTEMIS</td>
+<td>5</td>
+<td>I</td>
+</tr>
+<tr>
+<td>ME</td>
+<td>MERCIFUL END</td>
+<td>ARES</td>
+<td>ATHENA</td>
+<td>3</td>
+<td>R</td>
+</tr>
+<tr>
+<td>DR</td>
+<td>DEADLY REVERSAL</td>
+<td>ARTEMIS</td>
+<td>ATHENA</td>
+<td>3</td>
+<td>A</td>
+</tr>
+<tr>
+<td>MS</td>
+<td>MIRAGE SHOT</td>
+<td>ARTEMIS</td>
+<td>POSEIDON</td>
+<td>2</td>
+<td>I</td>
+</tr>
+<tr>
+<td>EA</td>
+<td>EXCLUSIVE ACCESS</td>
+<td>DIONYSUS</td>
+<td>POSEIDON</td>
+<td>1</td>
+<td>E</td>
+</tr>
+<tr>
+<td>IW</td>
+<td>ICE WINE</td>
+<td>DEMETER</td>
+<td>DIONYSUS</td>
+<td>6</td>
+<td>N</td>
+</tr>
+<tr>
+<td>FV</td>
+<td>FREEZING VORTEX</td>
+<td>ARES</td>
+<td>DEMETER</td>
+<td>8</td>
+<td>G</td>
+</tr>
+<tr>
+<td>VM</td>
+<td>VENGEFUL MOOD</td>
+<td>ARES</td>
+<td>ZEUS</td>
+<td>8</td>
+<td>L</td>
+</tr>
+<tr>
+<td>SF</td>
+<td>SCINTILLATING FEAST</td>
+<td>DIONYSUS</td>
+<td>ZEUS</td>
+<td>3</td>
+<td>I</td>
+</tr>
+<tr>
+<td>CR</td>
+<td>CALCULATED RISK</td>
+<td>ATHENA</td>
+<td>DIONYSUS</td>
+<td>13</td>
+<td>S</td>
+</tr>
+<tr>
+<td>PS</td>
+<td>PARTING SHOT</td>
+<td>APHRODITE</td>
+<td>ATHENA</td>
+<td>9</td>
+<td>H</td>
+</tr>
+</tbody>
+</table>
+<p>Here is <a href="https://docs.google.com/document/d/1UtBd9dgYOOookOeusnVJtYgoQuQjdPrp3-AcBYOmgRE/edit?usp=sharing">a full rundown of a possible fully logical solution path</a>.</p>
+    
+      
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,171 @@
+
+
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+<title>The Magic Match</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/skeleton.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.formset/1.2.2/jquery.formset.min.js"></script>
+    <script src="../static/js/sorttable.js"></script>
+    <script src="../static/js/tray.js"></script>
+    <script src="../static/js/hints.js"></script>
+    <link rel="icon" sizes="16x16 32x32 48x48 64x64" href="../static/images/dpph.ico" type="image/vnd.microsoft.icon">
+    
+<script>
+  /* FIXME */
+</script>
+
+</head>
+<body>
+    
+    <nav>
+        <span class="tray">
+            <div class="top-tabs">
+                <a href="../index.html">
+                    Home
+                </a>
+                <a href="../rules.html">
+                    Rules
+                </a>
+                
+                
+                <a class="selected-tab" href="../puzzles.html">
+                    Puzzles
+                </a>
+                
+                <a href="../teams.html">
+                    Teams
+                </a>
+                <a href="../faq.html">
+                    FAQ
+                </a>
+                
+                <a href="../errata.html">
+                    Updates
+                </a>
+                
+                
+                <a href="../wrapup.html">
+                    Wrap-Up
+                </a>
+                
+                <!--
+                <a href="/archive">
+                    Archive
+                </a>
+                -->
+            </div>
+            <div class="top-left-actions">
+                
+
+
+
+<a href="../post-hunt-solve/the-magic-match.html" class="btn">Check your answer spoiler-free</a>
+
+
+<a href="../solution/the-magic-match.html" class="btn">View solution</a>
+<a href="../stats/the-magic-match.html" class="btn">Stats</a>
+
+
+
+            </div>
+        </span>
+        <div class="top-right-actions">
+        
+        </div>
+    </nav>
+    
+    <div class="content">
+        
+
+<h1>
+    
+    The Magic Match
+    
+    
+</h1>
+
+<main>
+    
+    <div class="puzzle-erratum">At 12:58 EDT on September 19, three instances of &ldquo;unmarked sector&rdquo; were replaced with &ldquo;sector that isn't marked with a letter&rdquo; or its grammatical equivalent.</div>
+
+<p>Dippy and their friends Croy, Benny and Amy decide to play a game of Konundrus&mdash;a popular sport involving 4 Players, a circular playing field and a long set of rules.</p>
+<h3>The Playing Field</h3>
+<p>The game is traditionally played on a field like the one shown below. It consists of 24 sectors that are placed in a ring. At the start of the game, all players are still outside the field until the rules tell them to enter a sector.</p>
+<div class="half-img-wrap"><img src="../static/puzzle_resources/the-magic-match/battlefield.png"></div>
+
+<p>Note:</p>
+<ul>
+<li>For orientation purposes, ‘left’ means counterclockwise and ‘right’ means clockwise.</li>
+<li>The distance between two sectors is calculated by the number of squares between them + 1. For example, two adjacent sectors have distance 1, and a sector has distance 0 from itself.</li>
+</ul>
+<h3>Magic</h3>
+<p>Each player uses a specific color of magic. When they use magic to mark a sector with a symbol, that symbol has the same color as the magic used. (Players always use magic when marking.) As marking a sector does not affect any symbols that were previously on it, there can be infinitely many symbols on a sector.</p>
+<p>Dippy, Croy, Benny and Amy use red, green, blue and black magic respectively.</p>
+<h3>How the Game Is Played</h3>
+<p>The game is divided into multiple rounds, each consisting of 4 turns that are labeled A through D for each of the 4 players. During a player’s turn, that player should follow only the instruction that has the same first letter as their name. The rounds as well as their instructions should be followed in the order given below. (That means Player A is always the first player to follow an instruction in a given round.) Oh, and before you ask: Yes, these instructions are oddly specific and include the emotions the players should be feeling; get over it. The rules will never contradict each other, unless they were followed incorrectly.</p>
+<p>We advise you to keep track of every action and not just the current state of the field, as making a mistake and having to redo your steps is much more comfortable when you only have to back up one or two steps.</p>
+<p><strong>Note:</strong> For some reason, the NKA recently introduced a new global rule that should be followed at all times: If the distance between two players is only two sectors or fewer (including if they are standing on the same sector), then the player that caused this situation shall be sent to jail (the center of the board). A player in jail is not allowed to perform their next turn and is simply skipped when they would next take their turn. (They take the turn after that one normally.) However, they can still be moved as an effect of other instructions. As jail is not considered a sector, there can be any number of players in it without triggering this rule. This global rule is checked only after a turn is completed. To clarify when this is the case, all instructions end with the sentence “End your turn” or some variation of it.</p>
+<h3>The Rounds:</h3>
+<h4>Round 1:</h4>
+<p>A: You get to start the game! Start by choosing any sector and marking it with a 1, then continue clockwise and mark the next sector with 2. Continue like this until the last sector, which is to the left of the one marked with a 1, is marked with a 24. Since you did such a good job marking everything, also mark sector 1 with a N for North and the sector opposite from it with a S for South. End your turn standing on the sector you marked with an S.</p>
+<p>B: The current markings aren’t clear enough for you. Add an E for East in the appropriate place and stay there. End your turn.</p>
+<p>C: You’d rather not get involved in all that boring orientation stuff. You decide to just sit out this turn and stare at the clouds. End your turn.</p>
+<p>D: You want to help your friends out with marking the board. Add the missing compass direction where it belongs. End your turn on the only unoccupied sector marked with an even prime number.</p>
+<h4>Round 2:</h4>
+<p>A: All that numbering made you exhausted. You deserve some food. Magically summon some pizza and place it on the sector immediately to the left of you. Divide the pizza into 8 slices and eat half of them. End your turn.</p>
+<p>B: You are jealous of Player A and also want some of that food. You use your magic to switch places with that player and eat two slices (but leave the food where it is and stay in your sector while eating it). Mark the sector with the food with a T and end your turn.</p>
+<p>C: Now that the boring stuff is out of the way, you want to create some obstacles for the other players. Magically grow some trees on all sectors that are exactly 5 sectors away from a player and are not already occupied by an object or a player. This causes those spaces to be inaccessible unless the trees are first removed. Exactly one tree should have no letters next to it. Change that by marking the sector immediately to the left of it with a T for Tree. Move to the sector immediately to the right of the aforementioned tree and mark it with an O because that is the third letter of your name. End your turn.</p>
+<p>D: Apparently it’s trendy to end your turn next to an object. Teleport to a sector in the south-west that is next to an object and not marked with a letter. If the object that is now next to you is cooked, mark your current sector with an O. If it contains wood, mark your current sector with an I. End your turn.</p>
+<h4>Round 3:</h4>
+<p>A: How dare that rascal steal your pizza. Move to a sector next to the pizza that you were not previously on and put the rest of the pizza into your pocket, so they can’t have more of it. As a distraction, mark the sector the pizza was on with a picture of the pizza. End your turn.</p>
+<p>B: Eat another slice of pizza… wait a second, that is only a drawing. Confused, you try to teleport to sector 16 but instead you land on the sector directly opposite of it. You mark it with the second letter of the name of the player who caused your confusion. End your turn.</p>
+<p>C: You decide to go on a short walk. Move three sectors clockwise to a sector that is marked with a compass direction and mark it with the <i>N</i>th letter of the alphabet, where <i>N</i> equals the number of your old sector minus the number of the one you are now on. End your turn.</p>
+<p>D: You’d really like to move to sector 21 but there is a tree blocking it. You could simply burn it down using a fireball, but you don’t want to hurt Player C’s feelings, so you ask him nicely whether it’s okay to remove it. Meanwhile you notice that there is only one sector that isn't marked with a letter and is adjacent to a tree. Teleport to this sector and mark it with a T if it is in the east half of the playing field; otherwise, mark it with a C. End your turn.</p>
+<h4>Round 4:</h4>
+<p>A: Move two sectors to the left and summon a seabear to the sector that is now opposite of you. Draw a circle of protection around you so it doesn’t attack you and also mark your sector with an O because that looks like a circle. End your turn.</p>
+<p>B: You reorient yourself and decide to stay away from magic for some time just to be sure. You move to the nearest sector that is a perfect number and find a 1-Dollar bill there. Put it in your pocket and take a short nap. End your turn.</p>
+<p>C: You hear a complaint from one of the other players. You suppose they are right, but you don’t want your tree to be burned down. Transform the only tree on an odd sector into an Ent. It moves one sector clockwise after the end of every turn of every player (even if that player’s instructions are skipped over). Get to safety by teleporting to the sector opposite of you and marking the only sector that isn't marked with a letter next to it with an A. End your turn (which causes the Ent to move for the first time.)</p>
+<p>D: Oh look! Sector 21 is finally completely empty. Teleport there and mark it with the second letter of your name. There sure are many letters adjacent to one another in this part of the board. End your turn.</p>
+<h4>Round 5:</h4>
+<p>A: What? These trees are still here? Make some space by teleporting all stationary trees to an alternate Dimension. You teleport to Sector 1 and notice that there is still pizza in your pocket. Drop it on the sector next to you that is also next to another living creature. Mark the other sector adjacent to you with the last letter of your name. End your turn.</p>
+<p>B: You wake up and notice that someone is about to get overrun by a non-player creature. Teleport that player to the sector opposite of the sector containing the aforementioned creature. Teleport yourself to safety as well by teleporting yourself to the only prime-numbered sector that is also marked with a red vowel. You mark the sector immediately to the left of it with the third letter of your name and the one immediately to the right of it with the <i>N</i>th letter of the alphabet, where <i>N</i> is the value of the dollar bill in your pocket times the number of players currently standing on an even-numbered sector. End your turn.</p>
+<p>C: Somebody destroyed all your trees! Punish them by teleporting them three sectors in front of the Ent! Teleport yourself to the sector opposite of their new sector for the best view. Even though there is already a letter here, mark it with the <i>N</i>th letter of the alphabet, where <i>N</i> is the number of the sector you teleported them to. End your turn.</p>
+<p>D: You try to help your friend out by planning a surprise attack on the Ent. Move to the sector two sectors behind the monster and mark it with the third letter of the name of the food on it. Pick the food up and eat the rest of it. End your turn.</p>
+<h4>Round 6:</h4>
+<p>A: This is it, the moment of truth: Save yourself from the creature by sending it to an alternate dimension. Unfortunately, you accidentally create a portal to that dimension in the sector that the Ent originated from. Any player that stands immediately next to it will get sucked in there. End your turn.</p>
+<p>B: You are delighted that the monster is gone. Mark the sector you are currently on with a Thank You message for the player that saved everyone. End your turn.</p>
+<p>C: You are sad that nobody liked your creations. Move one sector to the left and mark it with the second letter of your name. Throw yourself to the floor and cry. Then remember who did this to you and angrily stomp across the whole field to the sector opposite of you and also mark it with the second letter of your name. Kick the player next to you five sectors away from you, so that they land on an odd-numbered sector with a red letter on it. End your turn.</p>
+<p>D: A player just got kicked, so you decide to check up on them. Teleport to the two-digit sector next to them. You should note whether or not they are okay, so you mark your current sector with an R for “reasonably well”. End your turn.</p>
+<h4>Round 7:</h4>
+<p>A: You try to thank the player that helped you, but they are already gone. Now, you’d rather get away from that meanie, who kicked you, as fast as possible. Move to the sector opposite of them. Unfortunately your sector and both adjacent sectors were marked by them, but you’ll get over it. End your turn.</p>
+<p>B: You are getting hungry again, so you move to the sector that isn't marked with a letter and is next to a pizza… wait… that’s still only a drawing. Bamboozled again. You mark your current sector with an N and then move to the sector that the prankster is standing on and kick them into the portal. You hear a short scream as the portal closes up and that player disappears from this world. The closing portal causes all of you to move from your current location:</p>
+<ul>
+<li>Every player that was standing on an odd-numbered sector moves one sector to the right.</li>
+<li>Every player that was standing on an even-numbered sector moves one sector to the left.</li>
+<li>Everybody else moves to the sector that was opposite of the portal.</li>
+</ul>
+<p>Now that one of the players is gone, you collectively decide to quit playing and do something else. Everybody should read out their markings, starting from the sector that they are standing on and continuing clockwise. They all shout out their readings in a logical order, based on the colors of their respective markings.</p>
+</main>
+
+
+    </div>
+    <footer>
+        Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
+    </footer>
+    
+</body>
+</html>
