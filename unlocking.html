@@ -28,13 +28,18 @@
   /* FIXME */
 </script>
 
+<style>
+input { margin-bottom: 0; }
+.spark { font-style: italic; }
+.threshold { font-style: italic; text-align: center; }
+</style>
 </head>
 <body>
     
     <nav>
         <span class="tray">
             <div class="top-tabs">
-                <a class="selected-tab" href="index.html">
+                <a href="index.html">
                     Home
                 </a>
                 <a href="rules.html">
@@ -42,7 +47,7 @@
                 </a>
                 
                 
-                <a href="puzzles.html">
+                <a class="selected-tab" href="puzzles.html">
                     Puzzles
                 </a>
                 
@@ -78,108 +83,19 @@
     </nav>
     
     <div class="content">
-        
 
-<style>
-.homelogo {
-    width: 50%;
-}
-.homerow {
-    text-align: center;
-}
-@media print {
-    a {
-        text-decoration: none;
-    }
+<h1>Unlocking</h1>
 
-    p a {
-        color: inherit;
-    }
+<p>You can use this page to record which puzzles you’ve solved and simulate progressing through the hunt while it was live. Your solve state is automatically saved to local storage.</p>
 
-    .feedback, .register {
-        display: none;
-    }
-
-    .print-register {
-        font-weight: bold;
-        margin: 20px 0 40px;
-    }
-}
-
-@media screen {
-    .print-register {
-        display: none;
-    }
-
-    .feedback, .register {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .register .btn {
-        height: 46px;
-        line-height: 46px;
-        font-size: 2rem;
-    }
-}
-
-h3 {
-    text-align: center;
-    margin: 0;
-}
-</style>
-
-<h1>DP Puzzle Hunt</h1>
-
-<div class="row homerow">
-    <img src="static/images/dpph.png" class="homelogo" alt="DP Puzzle Hunt logo">
-</div>
-
-
-<div class="feedback">
-
-The DP Puzzle Hunt has now come to a close. Thanks for puzzling with us!
-
-<br>
-Please fill out our <a href="https://docs.google.com/forms/d/e/1FAIpQLScAnogk-xwr5n9QQIHl0v2UsVFPkWeC32Ach_lmLMJK3pPYig/viewform">feedback form</a>
-
-and check out our <a href="wrapup.html">wrap-up</a>!
-<br>
-You can also simulate progressing through the hunt while it was live on our <a href="unlocking.html">unlocking page</a>.
-</div>
-
-
-<div class="row">
-    <div class="six columns">
-        <h3>What</h3>
-        <p>
-            This is a puzzlehunt inspired by the other hunts that have happened on Puzzle Hunt Calendar, but written to be easier and focused on teams that are relatively new to puzzlehunts.
-            Registration is open! Be sure to check out the
-            <a href="rules.html">rules</a> and <a href="faq.html">FAQ</a>
-            for more information.
-        </p>
-    </div>
-    <div class="six columns">
-        <h3>When</h3>
-        <p>
-            The hunt began on
-            September 18, 2020 at 08:00 PM EDT,
-            and ended
-            3 days later on
-            September 21, 2020 at 08:00 PM EDT.
-        </p>
-    </div>
-</div>
-
-
-
-</div>
-
-
-    </div>
+    <div id="unlocking"></div>
     <footer>
         Powered by <a href="https://github.com/galacticpuzzlehunt/gph-site">gph-site</a>
     </footer>
-    
+<script src="static/unlocking.js"></script>
+<!--
+source for the curious https://github.com/betaveros/dpuzzlehunt-static/tree/master/unlocking-svelte/src/App.svelte
+(probably overkill, but i'm so over manually plumbing checkboxes)
+-->
 </body>
 </html>
